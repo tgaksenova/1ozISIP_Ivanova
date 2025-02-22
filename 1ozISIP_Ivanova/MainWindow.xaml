@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Тестовое приложение" Background="Aqua" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="193,139,0,0" Height="50" Width="50" FontSize="16"/>
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,273,0,111" Height="50" Width="268" FontSize="16"/>
         <TextBox Height="50" Width="150" ToolTip="В это поле введите ФИО"/>
 
     </Grid>
