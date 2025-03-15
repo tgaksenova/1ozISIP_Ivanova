@@ -24,5 +24,21 @@ namespace _1ozISIP_Ivanova
         {
             InitializeComponent();
         }
+
+        private void Back_Click(object sender, RoutedEventArgs e)
+        {
+            if (MainFrame.CanGoBack) MainFrame.GoBack();
+        }
+
+        private void MainFrame_Navigated(object sender, NavigationEventArgs e)
+        {
+            if (!(e.Content is Page page)) return;
+            this.Title = $"ProjectByAksenova - {page.Title}";
+
+            if (page is Str1)
+                btnBack.Visibility = Visibility.Hidden;
+            else
+                btnBack.Visibility = Visibility.Visible;
+        }
     }
 }

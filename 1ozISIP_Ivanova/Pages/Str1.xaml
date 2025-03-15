@@ -41,6 +41,6 @@
                 Background="AliceBlue" Foreground="BlueViolet" Grid.Row="2" Grid.ColumnSpan="3"/>
         <Button Name="btnReg" Content="Регистрация" FontSize="30" FontWeight="Bold"
                 FontFamily="Georgia" ToolTip="Нажмите для регистрации" Height="50" Width="220"
-                Background="AliceBlue" Foreground="BlueViolet" Grid.Row="3" Grid.ColumnSpan="3"/>
+                Background="AliceBlue" Foreground="BlueViolet" Grid.Row="3" Grid.ColumnSpan="3" Click="btnReg_Click_1"/>
     </Grid>
 </Page>

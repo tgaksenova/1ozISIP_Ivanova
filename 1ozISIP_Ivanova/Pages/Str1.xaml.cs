@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _1ozISIP_Ivanova.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace _1ozISIP_Ivanova
         public Str1()
         {
             InitializeComponent();
+        }
+
+        private void btnReg_Click_1(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Str2());
         }
     }
 }
