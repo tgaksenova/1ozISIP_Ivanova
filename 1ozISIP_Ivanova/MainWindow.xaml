@@ -12,7 +12,8 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="45"/>
         </Grid.RowDefinitions>
-        <Frame Name="MainFrame" Grid.Row="1" HorizontalAlignment="Center" Width="800" Height="344" VerticalAlignment="Bottom"/>
+        <Frame Name="MainFrame" Grid.Row="1" HorizontalAlignment="Center" Width="800" Height="344"
+               VerticalAlignment="Bottom" Source="Pages/Str1.xaml"/>
         <Button Content="Назад" Background="Beige" HorizontalAlignment="Left" Height="40"
                 Width="100" Foreground="Chocolate" FontSize="22" FontWeight="Bold"
                 FontFamily="Book Antiqua" ToolTip="Кликните для возврата на предыдущую страницу"

@@ -6,9 +6,41 @@
       xmlns:local="clr-namespace:_1ozISIP_Ivanova"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="Моя первая страница">
+      Title="Авторизация" Background="Beige">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Label Content="Логин" Grid.Row="0" Grid.Column="1" FontSize="30" Foreground="Fuchsia"
+               HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Georgia"/>
+        <Label Content="Пароль" Grid.Row="1" Grid.Column="1" FontSize="30" Foreground="Fuchsia"
+                HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Georgia"/>
+        <TextBox Name="txtLog" Text="" FontSize="30" FontFamily="Georgia"
+                 ToolTip="Введите логин" Height="50" Width="220" Grid.Row="0" Grid.Column="2"
+                 HorizontalAlignment="Center" Background="Transparent"/>
+        <TextBlock Text="Логин или почта" Foreground="Gray" Name="HintLog" Height="50"
+                   Width="220" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Center"
+                   FontSize="22" FontFamily="Georgia"/>
+        <PasswordBox Name="Pass" Password="" FontSize="30" FontFamily="Georgia"
+                ToolTip="Введите пароль" Height="50" Width="220" Grid.Row="1" Grid.Column="2"
+                HorizontalAlignment="Center" Background="Transparent"/>
+        <TextBlock Text="Пароль" Foreground="Gray" Name="HintPass" Height="50" Width="220"
+                   Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" FontSize="22"
+                   FontFamily="Georgia"/>
+        <Button Name="btnAuth" Content="Вход" FontSize="30" FontWeight="Bold"
+                FontFamily="Georgia" ToolTip="Нажмите для входа в систему" Height="50" Width="220"
+                Background="AliceBlue" Foreground="BlueViolet" Grid.Row="2" Grid.ColumnSpan="3"/>
+        <Button Name="btnReg" Content="Регистрация" FontSize="30" FontWeight="Bold"
+                FontFamily="Georgia" ToolTip="Нажмите для регистрации" Height="50" Width="220"
+                Background="AliceBlue" Foreground="BlueViolet" Grid.Row="3" Grid.ColumnSpan="3"/>
     </Grid>
 </Page>
